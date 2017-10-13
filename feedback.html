@@ -27,32 +27,47 @@
     
 <div id = "content">
     <form action="" method="">
-        <fieldset>
-            <legend>Tell us what you think</legend>
+        <h2>Tell us what you think</h2>
+        <fieldset id="pizza">
+            <legend>How do you like our Pizza?</legend>
         <ul>
-        <label>How do you like our Pizza?</label>
-            <li><label>Awesome<input type="radio" name="likePizza" value="Avesome" checked></label></li>
-            <li><label>Good<input type="radio" name="likePizza" value="Good"></label></li>
-            <li><label>Okay<input type="radio" name="likePizza" value="Okay"></label></li>
-            <li><label>Poor<input type="radio" name="likePizza" value="Poor"></label></li>
+            <li><label><input type="radio" name="likePizza" value="Avesome" checked>Awesome</label></li>
+            <li><label><input type="radio" name="likePizza" value="Good">Good</label></li>
+            <li><label><input type="radio" name="likePizza" value="Okay">Okay</label></li>
+            <li><label><input type="radio" name="likePizza" value="Poor">Poor</label></li>
         </ul>
+        </fieldset>
 
+        <fieldset id ="prizes">
+            <legend>What do you think about our prizes?</legend>
         <ul>
-        <label>What do you think about our prizes?</label>
             <li><label>Fair<input type="radio" name="prize" value="Fair" checked></label></li>
             <li><label>Okay<input type="radio" name="prize" value="Good"></label></li>
             <li><label>Expensive<input type="radio" name="prize" value="Expensive"></label></li>
         </ul>
         </fieldset>
 
-        <fieldset>
-        <ol>
-            <li><label>Your name? <input type="text" name="name" id="form-name" value="Your name" maxlength="50"></label></li>
-            <li><label>Your e-mail address? <input type="email" name="email" id="form-email" value="Your email" maxlength="50"></label></li>
-            <li><label>What can we do better? <br><textarea name="better" id="form-better" rows="5" cols="50">Everything is totally awesome!</textarea></label></li>
-            <li><input type="submit" value="Send"></li>
-        </ol>
+        <fieldset id = "name">
+            <legend>Your name?</legend>
+        <ul>
+            <li><input type="text" name="name" id="form-name" value="Your name" maxlength="50" class = "textinput"></li>
+        </ul>
         </fieldset>
+
+        <fieldset id = "email">
+            <legend>Your e-mail address?</legend>
+            <ul>
+            <li><input type="email" name="email" id="form-email" value="Your email" maxlength="50" class = "textinput"></li>
+            </ul>
+        </fieldset>
+
+        <fieldset id = "better">
+            <legend>What can we do better?</legend>
+            <ul>
+                <li><textarea name="better" id="form-better" rows="5" cols="50" maxlength = "300">Everything is totally awesome!</textarea></li>
+            </fieldset>
+            <li class="buttons"><input type="submit" value="Send"></li>
+        </ul>
     </form>
 </div>
 
