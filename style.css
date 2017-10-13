@@ -61,6 +61,8 @@ ul{
 li{
     float: inherit;
     display: inline-block;
+    padding-right: 1em;
+    padding-left: 1em;
 }
 
 hours{
