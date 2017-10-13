@@ -11,7 +11,6 @@
 #header, #footer{
     background-color: cornflowerblue;
     border: thin solid black;
-    padding: 1em;
     height: auto;
     width: 100%;
     font-family: "Comic Sans MS";
@@ -23,6 +22,7 @@ h1{
     font-size: 1.2em;
     float: left;
     display: inline-block;
+    padding: 1em;
 }
 
 nav ul{
@@ -39,6 +39,7 @@ nav ul li{
 
 nav{
     width: 100%;
+    padding: 1em;
 }
 
 nav ul li a{
@@ -73,18 +74,21 @@ hours{
     float: left;
     width: 33%;
     display: inline-block;
+    padding: 1em;
 }
 
 description{
     float: left;
     width: 33%;
     display: inline-block;
+    padding: 1em;
 }
 
 address{
     float: right;
     font-style: normal;
     display: inline-block;
+    padding: 1em;
 }
 
 #postheader{
