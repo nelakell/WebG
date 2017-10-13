@@ -1,65 +1,86 @@
 
-body {
+#preheader, #postheader{
     border: thin solid black;
-    height: inherit;
+    height: auto;
+    width: 100%;
+    clear: both;
+    font-family: "Comic Sans MS";
+    display: inline-block;
 }
 
-#preheader{
+#header, #footer{
+    background-color: cornflowerblue;
     border: thin solid black;
-    height: 2em;
-}
-
-#header{
-    height: 6em;
-    background-color:cornflowerblue;
-    border: solid black thin;
+    padding: 1em;
+    height: auto;
+    width: 100%;
+    font-family: "Comic Sans MS";
+    vertical-align: middle;
+    display: inline-block;
 }
 
 h1{
-    margin-left: 2em;
-    font-size: 1em;
+    font-size: 1.2em;
+    float: left;
+    width: 75%;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
     float: left;
 }
 
-h2 {
-    font-size: 2em;
+nav{
+    width: 100%;
+}
+
+nav ul li a{
+    display: block;
+    padding: 0.5em;
+}
+
+#content{
+    clear: both;
+    border: thin solid black;
     font-family: "Comic Sans MS";
+    padding: 1em;
     text-align: center;
 }
 
-li {
-    display: inline;
-    margin-right: 1em;
-    padding: 0.5em;
-    float: right;
+h2{
+    font-size: 2em;
 }
 
-#footer{
-    height: 8em;
-    background-color:cornflowerblue;
-    border: solid black thin;
+ul{
+    list-style-type: none;
+}
+
+li{
+    float: inherit;
+    display: inline-block;
 }
 
 hours{
     float: left;
-    display: block;
-    margin-left: 1em;
-
+    width: 33%;
+    display: inline-block;
 }
 
-description {
-    float: right;
-    width: 20%;
-    padding-right: 3em;
+description{
+    float: left;
+    width: 33%;
+    display: inline-block;
 }
 
 address{
     float: right;
-    display: block;
-    margin-right: 2em;
+    font-style: normal;
+    display: inline-block;
 }
 
 #postheader{
-    border: thin solid black;
-    height: 1.5em;
+    height: 2em;
 }
