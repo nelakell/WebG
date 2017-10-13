@@ -1,0 +1,65 @@
+
+body {
+    border: thin solid black;
+    height: inherit;
+}
+
+#preheader{
+    border: thin solid black;
+    height: 2em;
+}
+
+#header{
+    height: 6em;
+    background-color:cornflowerblue;
+    border: solid black thin;
+}
+
+h1{
+    margin-left: 2em;
+    font-size: 1em;
+    float: left;
+}
+
+h2 {
+    font-size: 2em;
+    font-family: "Comic Sans MS";
+    text-align: center;
+}
+
+li {
+    display: inline;
+    margin-right: 1em;
+    padding: 0.5em;
+    float: right;
+}
+
+#footer{
+    height: 8em;
+    background-color:cornflowerblue;
+    border: solid black thin;
+}
+
+hours{
+    float: left;
+    display: block;
+    margin-left: 1em;
+
+}
+
+description {
+    float: right;
+    width: 20%;
+    padding-right: 3em;
+}
+
+address{
+    float: right;
+    display: block;
+    margin-right: 2em;
+}
+
+#postheader{
+    border: thin solid black;
+    height: 1.5em;
+}
