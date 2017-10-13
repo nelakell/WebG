@@ -70,6 +70,93 @@ li{
     padding-left: 1em;
 }
 
+/* form */
+form ul{
+    float: right;
+}
+
+form {
+    width: 45em;
+    border-radius: 10px;
+    padding: 1em;
+    overflow: hidden;
+}
+
+label {
+    display: block;
+    float: left;
+    width: 30em;
+    text-align: left;
+    margin-right: .5em;
+}
+
+input.textinput {
+    width: 30em;
+    height: 2em;
+    border: 1px solid #666;
+}
+
+textarea {
+    display: block;
+    width: 37em;
+    height: 5em;
+    line-height: 1.25;
+    overflow: auto;
+    resize: none;
+}
+
+input.textinput, textarea {
+    font-size: .875em;
+}
+
+fieldset {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+legend {
+    display: block;
+    width: 15em;
+    float: left;
+    margin-right: .5em;
+    text-align: right;
+}
+
+#pizza label, #prizes label {
+    display: inline;
+    float: none;
+    text-align: inherit;
+    width: auto;
+    font-weight: normal;
+    background-color: inherit;
+}
+
+#pizza ul li {
+    display: inline;
+    margin-bottom: 0;
+}
+
+#prizes ul li {
+    display: inline;
+    margin-bottom: 0;
+}
+
+input[type="submit"]{
+    clear: both;
+    display: block;
+    width: 7em;
+    height: 2em;
+    float: right;
+    background: white;
+    font-size: inherit;
+    font-family: "Comic Sans MS";
+    border: 1px solid #04699d;
+    box-shadow: 2px 2px 3px rgba(0,0,0,.5);
+}
+/* form end */
+
 hours{
     float: left;
     width: 33%;
