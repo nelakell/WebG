@@ -6,6 +6,12 @@
     <meta charset="utf-8">
     <title>Tony's Pizza Factory</title>
     <link rel ="stylesheet" href="style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
@@ -26,50 +32,58 @@
 </div>
     
 <div id = "content">
-    <form action="" method="">
-        <h2>Tell us what you think</h2>
-        <fieldset id="pizza">
-            <legend>How do you like our Pizza?</legend>
-        <ul>
-            <li><label><input type="radio" name="likePizza" value="Avesome" checked>Awesome</label></li>
-            <li><label><input type="radio" name="likePizza" value="Good">Good</label></li>
-            <li><label><input type="radio" name="likePizza" value="Okay">Okay</label></li>
-            <li><label><input type="radio" name="likePizza" value="Poor">Poor</label></li>
-        </ul>
-        </fieldset>
 
-        <fieldset id ="prizes">
-            <legend>What do you think about our prizes?</legend>
-        <ul>
-            <li><label>Fair<input type="radio" name="prize" value="Fair" checked></label></li>
-            <li><label>Okay<input type="radio" name="prize" value="Good"></label></li>
-            <li><label>Expensive<input type="radio" name="prize" value="Expensive"></label></li>
-        </ul>
-        </fieldset>
 
-        <fieldset id = "name">
-            <legend>Your name?</legend>
-        <ul>
-            <li><input type="text" name="name" id="form-name" value="Your name" maxlength="50" class = "textinput"></li>
-        </ul>
-        </fieldset>
 
-        <fieldset id = "email">
-            <legend>Your e-mail address?</legend>
-            <ul>
-            <li><input type="email" name="email" id="form-email" value="Your email" maxlength="50" class = "textinput"></li>
-            </ul>
-        </fieldset>
 
-        <fieldset id = "better">
-            <legend>What can we do better?</legend>
-            <ul>
-                <li><textarea name="better" id="form-better" rows="5" cols="50" maxlength = "300">Everything is totally awesome!</textarea></li>
-            </fieldset>
-            <li class="buttons"><input type="submit" value="Send"></li>
-        </ul>
-    </form>
-</div>
+    <h2>Tell us what you think</h2>
+    <fieldset>
+        <p class = "questions">
+
+            How do you like our Pizza?<br>
+            What do you think about our prizes?<br>
+            Your Name? <br>
+            Your e-mail address? <br>
+            What can we do better? <br>
+
+
+        </p>
+
+        <p class="response">
+
+            <input type="radio" name="likePizza" value="Avesome" checked required>Awesome
+            <input type="radio" name="likePizza" value="Good" required>Good
+            <input type="radio" name="likePizza" value="Okay" required>Okay
+            <input type="radio" name="likePizza" value="Poor" required>Poor
+            <br>
+            <input type="radio" name="prize" value="Fair" checked required>Fair
+            <input type="radio" name="prize" value="Good" required>Okay
+            <input type="radio" name="prize" value="Expensive" required>Expensive<br>
+
+            <input type="text" name="name" id="form-name" value="Your name" maxlength="50" required></label><br>
+            <input type="email" value="invalid" name="email" id="form-email" value="Your email" maxlength="50" type = email required ></label><br>
+            <textarea name="better" id="form-better" rows="5" cols="50" required>Everything is totally awesome!</textarea></label><br>
+            <submit>
+                <input type="submit" value="Send">
+            </submit>
+
+        <p>
+
+
+
+    </fieldset>
+
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+
+    <div class="alert alert-success">
+        <strong>Vielen Dank</strong> Wir bedanken uns für Ihre Rückmeldung
+    </div>
+
+    <div class="alert alert-danger">
+        <strong>Sorry</strong> Ihre Eingabe ist leider fehlerhaft
+    </div>
 
 <div id = "footer">
     <hours>
