@@ -6,6 +6,12 @@
     <meta charset="utf-8">
     <title>Tony's Pizza Factory</title>
     <link rel ="stylesheet" href="style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
@@ -25,6 +31,7 @@
     </nav>
 </div>
     
+
 <div id = "content";>
     <form id="Feedback" name="Feedback" action="#" method="post">
         <h2>Tell us what you think</h2>
@@ -38,14 +45,7 @@
         </ul>
         </fieldset>
 
-        <fieldset id ="prizes">
-            <legend>What do you think about our prizes?</legend>
-        <ul>
-            <li><label>Fair<input type="radio" name="prize" value="Fair" checked></label></li>
-            <li><label>Okay<input type="radio" name="prize" value="Good"></label></li>
-            <li><label>Expensive<input type="radio" name="prize" value="Expensive"></label></li>
-        </ul>
-        </fieldset>
+
 
         <fieldset id = "name">
             <legend>Your name?</legend>
@@ -68,6 +68,7 @@
         <input id="Send" type="submit" onclick="validateForm()" value="Send" disabled="true">
     </form>
 </div>
+
 
 <script src="formular.js"></script>
 
