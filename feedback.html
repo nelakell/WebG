@@ -31,59 +31,46 @@
     </nav>
 </div>
     
-<div id = "content">
+
+<div id = "content";>
+    <form id="Feedback" name="Feedback" action="#" method="post">
+        <h2>Tell us what you think</h2>
+        <fieldset id="pizza">
+            <legend>How do you like our Pizza?</legend>
+        <ul>
+            <li><label><input type="radio" name="likePizza" value="Avesome" checked>Awesome</label></li>
+            <li><label><input type="radio" name="likePizza" value="Good">Good</label></li>
+            <li><label><input type="radio" name="likePizza" value="Okay">Okay</label></li>
+            <li><label><input type="radio" name="likePizza" value="Poor">Poor</label></li>
+        </ul>
+        </fieldset>
 
 
 
-
-    <h2>Tell us what you think</h2>
-    <fieldset>
-        <p class = "questions">
-
-            How do you like our Pizza?<br>
-            What do you think about our prizes?<br>
-            Your Name? <br>
-            Your e-mail address? <br>
-            What can we do better? <br>
-
-
-        </p>
-
-        <p class="response">
-
-            <input type="radio" name="likePizza" value="Avesome" checked required>Awesome
-            <input type="radio" name="likePizza" value="Good" required>Good
-            <input type="radio" name="likePizza" value="Okay" required>Okay
-            <input type="radio" name="likePizza" value="Poor" required>Poor
-            <br>
-            <input type="radio" name="prize" value="Fair" checked required>Fair
-            <input type="radio" name="prize" value="Good" required>Okay
-            <input type="radio" name="prize" value="Expensive" required>Expensive<br>
-
-            <input type="text" name="name" id="form-name" value="Your name" maxlength="50" required></label><br>
-            <input type="email" value="invalid" name="email" id="form-email" value="Your email" maxlength="50" type = email required ></label><br>
-            <textarea name="better" id="form-better" rows="5" cols="50" required>Everything is totally awesome!</textarea></label><br>
-            <submit>
-                <input type="submit" value="Send">
-            </submit>
-
-        <p>
+        <fieldset id = "name">
+            <legend>Your name?</legend>
+            <input type="text" name="name" id="form-name" minlength="2" maxlength="50" class = "textinput" required onkeyup="validateForm()">
+            <p id="name_empty" style="color: red"></p>
+        </fieldset>
+        <br>
+        <fieldset id = "email">
+            <legend>Your e-mail address?</legend>
+            <input type="email" name="email" id="form-email" maxlength="50" class = "textinput" required onkeyup="validateForm()">
+            <p id="mail_empty" style="color: red"></p>
+        </fieldset>
+        <br>
+        <fieldset id = "better">
+            <legend>What can we do better?</legend>
+            <textarea name="better" id="form-better" rows="5" cols="50" minlength="50" maxlength = "300" required onkeyup="validateForm()"></textarea>
+            <p id="textarea_empty" style="color: red"></p>
+        </fieldset>
+        <br>
+        <input id="Send" type="submit" onclick="validateForm()" value="Send" disabled="true">
+    </form>
+</div>
 
 
-
-    </fieldset>
-
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-    </button>
-
-    <div class="alert alert-success">
-        <strong>Vielen Dank</strong> Wir bedanken uns für Ihre Rückmeldung
-    </div>
-
-    <div class="alert alert-danger">
-        <strong>Sorry</strong> Ihre Eingabe ist leider fehlerhaft
-    </div>
+<script src="formular.js"></script>
 
 <div id = "footer">
     <hours>
