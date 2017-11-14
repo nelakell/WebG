@@ -25,8 +25,8 @@
     </nav>
 </div>
     
-<div id = "content">
-    <form action="" method="">
+<div id = "content";>
+    <form id="Feedback" name="Feedback" action="#" method="post">
         <h2>Tell us what you think</h2>
         <fieldset id="pizza">
             <legend>How do you like our Pizza?</legend>
@@ -49,27 +49,27 @@
 
         <fieldset id = "name">
             <legend>Your name?</legend>
-        <ul>
-            <li><input type="text" name="name" id="form-name" value="Your name" maxlength="50" class = "textinput"></li>
-        </ul>
+            <input type="text" name="name" id="form-name" minlength="2" maxlength="50" class = "textinput" required onkeyup="validateForm()">
+            <p id="name_empty" style="color: red"></p>
         </fieldset>
-
+        <br>
         <fieldset id = "email">
             <legend>Your e-mail address?</legend>
-            <ul>
-            <li><input type="email" name="email" id="form-email" value="Your email" maxlength="50" class = "textinput"></li>
-            </ul>
+            <input type="email" name="email" id="form-email" maxlength="50" class = "textinput" required onkeyup="validateForm()">
+            <p id="mail_empty" style="color: red"></p>
         </fieldset>
-
+        <br>
         <fieldset id = "better">
             <legend>What can we do better?</legend>
-            <ul>
-                <li><textarea name="better" id="form-better" rows="5" cols="50" maxlength = "300">Everything is totally awesome!</textarea></li>
-            </fieldset>
-            <li class="buttons"><input type="submit" value="Send"></li>
-        </ul>
+            <textarea name="better" id="form-better" rows="5" cols="50" minlength="50" maxlength = "300" required onkeyup="validateForm()"></textarea>
+            <p id="textarea_empty" style="color: red"></p>
+        </fieldset>
+        <br>
+        <input id="Send" type="submit" onclick="validateForm()" value="Send" disabled="true">
     </form>
 </div>
+
+<script src="formular.js"></script>
 
 <div id = "footer">
     <hours>
